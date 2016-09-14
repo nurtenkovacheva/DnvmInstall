@@ -12,6 +12,6 @@ $webClient.Proxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCrede
 Write-Host "Downloading DNVM.ps1 to $dnvmPs1Path"
 $webClient.DownloadFile('https://raw.githubusercontent.com/nurtenkovacheva/DnvmInstall/master/dnvm.ps1', $dnvmPs1Path)
 Write-Host "Downloading DNVM.cmd to $dnvmCmdPath"
-$webClient.DownloadFile('https://raw.githubusercontent.com/aspnet/Home/dev/dnvm.cmd', $dnvmCmdPath)
+$webClient.DownloadFile('https://raw.githubusercontent.com/nurtenkovacheva/DnvmInstall/master/dnvm.cmd', $dnvmCmdPath)
 Write-Host "Installing DNVM"
 & $dnvmCmdPath setup
